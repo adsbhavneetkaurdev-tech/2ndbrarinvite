@@ -1,0 +1,10 @@
+{
+  "name": "brar-mortgages-invitation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Interactive gift-box party invitation for Brar Mortgages",
+  "scripts": {
+    "start": "npx --yes serve public -l 3000",
+    "set-url": "node scripts/set-url.mjs"
+  }
+}

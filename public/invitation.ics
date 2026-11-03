@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Brar Mortgages//Partner Appreciation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:brar-partner-appreciation-20261211@brarmortgages
+DTSTAMP:20261103T000000Z
+DTSTART:20261212T010000Z
+DTEND:20261212T050000Z
+SUMMARY:Brar Mortgages Partner Appreciation Evening
+LOCATION:Four Points by Sheraton Edmonton South\, 7230 Argyll Rd NW\, Edmonton\, AB T6C 4A6
+DESCRIPTION:Thank you for your partnership! A special evening of celebration\, connection & appreciation.\n\nRSVP by Friday\, December 4: https://forms.gle/dehSAAB57XDKFnya6
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Brar Mortgages Partner Appreciation Evening tomorrow at 6:00 PM
+END:VALARM
+END:VEVENT
+END:VCALENDAR

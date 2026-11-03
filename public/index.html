@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>You're Invited · Brar Mortgages Partner Appreciation Evening</title>
+  <meta name="description" content="Thank you for your partnership. Join Brar Mortgages for an evening of celebration, connection & appreciation — Friday, December 11, 2026 at 6:00 PM, Four Points by Sheraton Edmonton South.">
+  <meta name="theme-color" content="#0f3d2a">
+
+  <!-- Open Graph / link previews. Replace SITE_URL with your deployed URL (see README). -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Brar Mortgages">
+  <meta property="og:title" content="You're Invited · Partner Appreciation Evening">
+  <meta property="og:description" content="Thank you for your partnership. Friday, December 11, 2026 · 6:00 PM · Four Points by Sheraton Edmonton South. Tap to open your invitation.">
+  <meta property="og:url" content="SITE_URL/">
+  <meta property="og:image" content="SITE_URL/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A green gift box tied with a red satin ribbon and bow">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="You're Invited · Partner Appreciation Evening">
+  <meta name="twitter:description" content="Friday, December 11, 2026 · 6:00 PM · Four Points by Sheraton Edmonton South">
+  <meta name="twitter:image" content="SITE_URL/og-image.png">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="og-image.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="stage" id="stage">
+
+    <!-- ===== Box interior (revealed when the lid comes off) ===== -->
+    <div class="interior" aria-hidden="true">
+      <div class="wall wall--top"></div>
+      <div class="wall wall--right"></div>
+      <div class="wall wall--bottom"></div>
+      <div class="wall wall--left"></div>
+      <div class="floor"></div>
+      <div class="glow"></div>
+      <div class="sparkles" id="sparkles"></div>
+    </div>
+
+    <!-- ===== Invitation card ===== -->
+    <section class="card-scroll" id="cardScroll" aria-hidden="true">
+      <article class="card" id="card" aria-labelledby="inviteTitle">
+        <div class="card__inner">
+          <div class="card__logo logo-wrap">
+            <img src="brar-mortgages-logo.png" alt="Brar Mortgages" width="524" height="421" data-fallback>
+            <span class="logo-fallback logo-fallback--brar">Brar Mortgages</span>
+          </div>
+
+          <p class="eyebrow">You're Invited</p>
+          <h1 class="card__title" id="inviteTitle">Thank You for Your Partnership</h1>
+          <p class="card__sub">Celebrate the success with us</p>
+          <div class="divider" aria-hidden="true"><span></span></div>
+          <p class="card__line">A special evening of celebration, connection &amp; appreciation</p>
+
+          <dl class="details">
+            <div class="details__row">
+              <dt><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span class="sr-only">Date</span></dt>
+              <dd>Friday, December 11, 2026</dd>
+            </div>
+            <div class="details__row">
+              <dt><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span class="sr-only">Time</span></dt>
+              <dd>6:00 PM</dd>
+            </div>
+            <div class="details__row">
+              <dt><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0 1 13 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span class="sr-only">Venue</span></dt>
+              <dd><strong>Four Points by Sheraton Edmonton South</strong><br>7230 Argyll Rd NW, Edmonton, AB T6C&nbsp;4A6</dd>
+            </div>
+          </dl>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="https://forms.gle/dehSAAB57XDKFnya6" target="_blank" rel="noopener">RSVP Now</a>
+            <p class="rsvp-note">Kindly RSVP by Friday, December 4</p>
+
+            <details class="cal">
+              <summary class="btn btn--secondary">Add to Calendar</summary>
+              <div class="cal__menu">
+                <a id="gcalLink" href="#" target="_blank" rel="noopener">Google Calendar</a>
+                <a href="invitation.ics" download="Brar-Mortgages-Partner-Appreciation.ics">Apple / Outlook (.ics)</a>
+              </div>
+            </details>
+
+            <a class="btn btn--secondary" id="mapsLink" href="#" target="_blank" rel="noopener">Get Directions</a>
+          </div>
+
+          <button type="button" class="replay" id="replayBtn">↺ Replay</button>
+        </div>
+      </article>
+      <a class="credit credit--inline logo-wrap" href="https://morusai.com" target="_blank" rel="noopener">
+        <span class="credit__text">Created by</span>
+        <img src="morus-ai-logo.png" alt="Morus AI" width="800" height="199" data-fallback>
+        <span class="logo-fallback logo-fallback--morus">Morus AI</span>
+      </a>
+    </section>
+
+    <!-- ===== Lid (landing view) ===== -->
+    <button type="button" class="lid" id="lid" aria-label="Tap to open your invitation">
+      <span class="lid__surface" aria-hidden="true"></span>
+
+      <span class="ribbon ribbon--v" aria-hidden="true"><span class="ribbon__half ribbon__half--a"></span><span class="ribbon__half ribbon__half--b"></span></span>
+      <span class="ribbon ribbon--h" aria-hidden="true"><span class="ribbon__half ribbon__half--a"></span><span class="ribbon__half ribbon__half--b"></span></span>
+
+      <span class="bow" aria-hidden="true">
+        <svg viewBox="0 0 240 200" class="bow__svg">
+          <defs>
+            <linearGradient id="satin" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e2323f"/>
+              <stop offset=".45" stop-color="#b3141f"/>
+              <stop offset=".7" stop-color="#d42532"/>
+              <stop offset="1" stop-color="#7c0b13"/>
+            </linearGradient>
+            <linearGradient id="satinDark" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#a0111b"/>
+              <stop offset="1" stop-color="#5e070d"/>
+            </linearGradient>
+            <radialGradient id="knot" cx=".4" cy=".35" r=".7">
+              <stop offset="0" stop-color="#ef4a55"/>
+              <stop offset=".6" stop-color="#b3141f"/>
+              <stop offset="1" stop-color="#6e0810"/>
+            </radialGradient>
+          </defs>
+          <!-- tails -->
+          <path d="M112 108 L78 186 L94 176 L104 194 L124 112 Z" fill="url(#satinDark)"/>
+          <path d="M128 108 L162 186 L146 176 L136 194 L116 112 Z" fill="url(#satin)"/>
+          <!-- loops -->
+          <path d="M120 100 C 92 58, 30 28, 18 62 C 6 96, 52 128, 120 106 Z" fill="url(#satin)"/>
+          <path d="M120 100 C 148 58, 210 28, 222 62 C 234 96, 188 128, 120 106 Z" fill="url(#satin)"/>
+          <!-- loop inner folds -->
+          <path d="M118 102 C 90 76, 48 60, 36 70 C 54 74, 88 88, 118 102 Z" fill="#6e0810" opacity=".55"/>
+          <path d="M122 102 C 150 76, 192 60, 204 70 C 186 74, 152 88, 122 102 Z" fill="#6e0810" opacity=".55"/>
+          <!-- highlights -->
+          <path d="M40 52 C 60 40, 90 56, 108 84" stroke="#ff8a92" stroke-width="3" fill="none" opacity=".55" stroke-linecap="round"/>
+          <path d="M200 52 C 180 40, 150 56, 132 84" stroke="#ff8a92" stroke-width="3" fill="none" opacity=".4" stroke-linecap="round"/>
+          <!-- knot -->
+          <rect x="102" y="86" width="36" height="32" rx="10" fill="url(#knot)"/>
+          <path d="M108 92 C 116 88, 126 88, 132 92" stroke="#ff9aa1" stroke-width="2.5" fill="none" opacity=".6" stroke-linecap="round"/>
+        </svg>
+        <span class="bow__shine"></span>
+      </span>
+
+      <span class="tag" aria-hidden="true">
+        <span class="tag__string"></span>
+        <span class="tag__card logo-wrap">
+          <span class="tag__hole"></span>
+          <img src="brar-mortgages-logo.png" alt="" width="524" height="421" data-fallback>
+          <span class="logo-fallback logo-fallback--brar">Brar Mortgages</span>
+        </span>
+      </span>
+
+      <span class="hint" aria-hidden="true">Tap to open your invitation</span>
+    </button>
+
+    <!-- ===== Credit (always visible, bottom) ===== -->
+    <a class="credit credit--fixed logo-wrap" href="https://morusai.com" target="_blank" rel="noopener">
+      <span class="credit__text">Created by</span>
+      <img src="morus-ai-logo.png" alt="Morus AI" width="800" height="199" data-fallback>
+      <span class="logo-fallback logo-fallback--morus">Morus AI</span>
+    </a>
+  </main>
+
+  <noscript>
+    <style>.lid{display:none}.card-scroll{opacity:1;visibility:visible}.card{transform:none;opacity:1}</style>
+  </noscript>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
